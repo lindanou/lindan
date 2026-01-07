@@ -1,22 +1,19 @@
-// Mobile menu toggle
 const toggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav");
+const mobileNav = document.querySelector(".nav-mobile");
 
-if (toggle && nav) {
+if (toggle && mobileNav) {
   toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
+    const isOpen = mobileNav.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  // Close menu when clicking a link (mobile)
-  nav.querySelectorAll("a").forEach((a) => {
+  mobileNav.querySelectorAll("a").forEach((a) => {
     a.addEventListener("click", () => {
-      nav.classList.remove("open");
+      mobileNav.classList.remove("open");
       toggle.setAttribute("aria-expanded", "false");
     });
   });
 }
 
-// Footer year
 const y = document.getElementById("y");
 if (y) y.textContent = String(new Date().getFullYear());
