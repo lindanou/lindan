@@ -19,7 +19,13 @@ body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   color: var(--text);
-  background: var(--bg);
+
+  /* 💗💙 ÜLDINE taust: roosa+sinine segu üle terve lehe */
+  background:
+    radial-gradient(1100px 520px at 18% -10%, rgba(237,162,187,.32), transparent 60%),
+    radial-gradient(1100px 520px at 82% -10%, rgba(135,181,227,.30), transparent 60%),
+    radial-gradient(900px 520px at 55% 18%, rgba(205,183,233,.22), transparent 60%),
+    var(--bg);
 }
 
 a{color:inherit; text-decoration:none}
@@ -34,10 +40,11 @@ a:hover{opacity:.92}
   border:1px solid var(--stroke);
 }
 
+/* HEADER */
 .site-header{
   position:sticky; top:0; z-index:50;
-  backdrop-filter: blur(14px);
-  background: rgba(251,246,242,.78);
+  backdrop-filter: blur(16px);
+  background: rgba(251,246,242,.70);
   border-bottom:1px solid rgba(0,0,0,.06);
 }
 
@@ -49,28 +56,36 @@ a:hover{opacity:.92}
 
 .brand{display:flex; align-items:center}
 .brand-logo{
-  width:240px;       /* LOGO SUUREM */
+  width:240px;
   height:auto;
   display:block;
   opacity:.98;
 }
 
+/* 💪 menüü suurem + bold */
 .nav{
   display:flex; align-items:center; gap:18px;
 }
 .nav a{
-  font-size:14px;
-  color: rgba(0,0,0,.70);
-  padding:10px 10px;
-  border-radius:12px;
+  font-size:16px;         /* suurem */
+  font-weight:800;        /* bold */
+  letter-spacing:-0.01em; /* modernsem */
+  color: rgba(0,0,0,.76);
+  padding:10px 12px;
+  border-radius:14px;
 }
-.nav a:hover{background: rgba(255,255,255,.50); color: rgba(0,0,0,.9);}
-
-.nav-cta{
-  border:1px solid var(--stroke);
+.nav a:hover{
   background: rgba(255,255,255,.55);
+  color: rgba(0,0,0,.92);
 }
 
+/* CTA nupp menüüs */
+.nav-cta{
+  border:1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, rgba(237,162,187,.28), rgba(135,181,227,.26));
+}
+
+/* Mobile */
 .nav-toggle{
   display:none;
   border:1px solid var(--stroke);
@@ -89,6 +104,7 @@ a:hover{opacity:.92}
   padding:12px 0;
   border-top: 1px solid rgba(0,0,0,.06);
   color: rgba(0,0,0,.80);
+  font-weight:800;
 }
 
 /* HERO */
@@ -98,14 +114,16 @@ a:hover{opacity:.92}
   overflow:hidden;
 }
 
+/* 💗💙 tugevam hero glow (rohkem segu) */
 .hero-bg{
-  position:absolute; inset:-140px -120px auto -120px;
-  height:520px;
+  position:absolute; inset:-160px -140px auto -140px;
+  height:600px;
   background:
-    radial-gradient(closest-side at 28% 40%, rgba(237,162,187,.40), transparent 62%),
-    radial-gradient(closest-side at 72% 40%, rgba(135,181,227,.42), transparent 62%),
-    radial-gradient(closest-side at 55% 18%, rgba(205,183,233,.32), transparent 62%);
-  filter: blur(3px);
+    radial-gradient(closest-side at 24% 42%, rgba(237,162,187,.52), transparent 62%),
+    radial-gradient(closest-side at 76% 42%, rgba(135,181,227,.52), transparent 62%),
+    radial-gradient(closest-side at 55% 18%, rgba(205,183,233,.34), transparent 62%),
+    radial-gradient(closest-side at 50% 52%, rgba(237,162,187,.18), transparent 65%);
+  filter: blur(4px);
   pointer-events:none;
 }
 
@@ -155,7 +173,7 @@ h1{
   border-radius:14px;
   border:1px solid var(--stroke);
   background: rgba(255,255,255,.52);
-  font-weight:650;
+  font-weight:750;
   font-size:14px;
 }
 .btn.primary{
@@ -182,10 +200,10 @@ h1{
 }
 .meta-title{
   display:block;
-  font-weight:800;
+  font-weight:900;
   font-size:12px;
   margin-bottom:3px;
-  color: rgba(0,0,0,.76);
+  color: rgba(0,0,0,.78);
 }
 .meta-text{
   display:block;
@@ -197,7 +215,7 @@ h1{
 /* Sections */
 .section{padding: 56px 0;}
 .section.soft{
-  background: rgba(255,255,255,.30);
+  background: rgba(255,255,255,.28);
   border-top:1px solid rgba(0,0,0,.06);
   border-bottom:1px solid rgba(0,0,0,.06);
 }
@@ -252,7 +270,7 @@ h1{
   width:34px; height:34px;
   border-radius: 14px;
   display:grid; place-items:center;
-  font-weight:900;
+  font-weight:950;
   background: linear-gradient(90deg, rgba(237,162,187,.55), rgba(135,181,227,.55));
   border: 1px solid rgba(0,0,0,.08);
   flex:0 0 auto;
@@ -286,7 +304,7 @@ h1{
   border-radius: 22px;
   padding: 16px;
   border:1px solid rgba(0,0,0,.10);
-  background: linear-gradient(90deg, rgba(237,162,187,.18), rgba(135,181,227,.18));
+  background: linear-gradient(90deg, rgba(237,162,187,.20), rgba(135,181,227,.20));
 }
 .callout h3{margin:0 0 8px; font-size:16px}
 .callout p{margin:0; color: rgba(0,0,0,.70); line-height:1.6}
@@ -331,6 +349,7 @@ h1{
   border-radius: 12px;
   border:1px solid rgba(0,0,0,.08);
   background: rgba(255,255,255,.45);
+  font-weight:750;
 }
 
 /* Responsive */
@@ -345,9 +364,9 @@ h1{
   .nav{display:none}
   .nav-toggle{display:inline-flex}
   .nav-mobile.open{display:block}
-  .brand-logo{width:220px}
+  .brand-logo{width:230px}
 }
 
 @media (max-width: 420px){
-  .brand-logo{width:200px}
+  .brand-logo{width:210px}
 }
