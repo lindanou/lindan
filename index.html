@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Lindan OÜ — kinkekarbid ja kingikomplektid</title>
-  <meta name="description" content="Lindan OÜ valmistab ja müüb kinkekarpe ning kingikomplekte. Hooajalised teemad, eritellimused ja peagi veel palju enamat." />
+  <meta name="description" content="Lindan OÜ valmistab ja müüb elegantseid kinkekarpe ja kingikomplekte. Hooajalised teemad, eritellimused ja ettevõtete kingid." />
   <meta name="theme-color" content="#fbf6f2" />
   <link rel="preload" href="assets/logo.png" as="image" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
@@ -15,191 +15,176 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">
-        <img class="brand-logo" src="assets/logo.png" alt="Lindan logo" width="260" height="173" />
+      <a class="brand" href="#" aria-label="Lindan avaleht">
+        <img class="brand-logo" src="assets/logo.png" alt="Lindan logo" />
       </a>
 
       <nav class="nav" aria-label="Põhinavigatsioon">
         <a href="#teenus">Kinkekarbid</a>
-        <a href="#kuidas">Kuidas tellida</a>
-        <a href="#tulekul">Tulevik</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#kuidas">Tellimine</a>
+        <a href="#tulevik">Tulevik</a>
+        <a class="nav-cta" href="#kontakt">Kontakt</a>
       </nav>
 
-      <button class="nav-toggle" aria-label="Ava menüü" aria-expanded="false">
-        ☰
-      </button>
+      <button class="nav-toggle" aria-label="Ava menüü" aria-expanded="false">☰</button>
     </div>
+
+    <nav class="nav-mobile" aria-label="Mobiilinavigatsioon">
+      <a href="#teenus">Kinkekarbid</a>
+      <a href="#kuidas">Tellimine</a>
+      <a href="#tulevik">Tulevik</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
   </header>
 
   <main id="sisu">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="badge">🎁 Kinkekarbid · kingikomplektid · eritellimused</p>
-          <h1>Elegantne kink, mis näeb välja nagu “wow” juba enne avamist.</h1>
-          <p class="lead">
-            Lindan OÜ valmistab ja müüb <strong>kinkekarpe</strong> ning <strong>kingikomplekte</strong>.
-            Hooajalised teemad, ettevõtete kingitused, sünnipäevad ja erisoovid.
-          </p>
+      <div class="hero-bg" aria-hidden="true"></div>
 
-          <div class="cta-row">
-            <a class="btn primary" href="#kontakt">Küsi pakkumist</a>
-            <a class="btn ghost" href="#kuidas">Kuidas tellimine käib</a>
-          </div>
+      <div class="container hero-inner">
+        <p class="eyebrow">🎁 Kinkekarbid · kingikomplektid · eritellimused</p>
 
-          <div class="trust">
-            <div class="trust-item">
-              <span class="trust-title">Hooajaline valik</span>
-              <span class="trust-text">Jõulud · Halloween · kevad · sõbrapäev</span>
-            </div>
-            <div class="trust-item">
-              <span class="trust-title">Eritellimus</span>
-              <span class="trust-text">Sisu, värvid ja stiil sinu järgi</span>
-            </div>
-            <div class="trust-item">
-              <span class="trust-title">Tulevikus rohkem</span>
-              <span class="trust-text">3D tooted, gravüür, laada müük</span>
-            </div>
-          </div>
+        <h1>Elegantne kink, mis tundub eriline juba enne avamist.</h1>
+
+        <p class="sub">
+          Lindan OÜ valmistab ja müüb <strong>kinkekarpe</strong> ning <strong>kingikomplekte</strong>.
+          Valime sisu, kujundame ja pakime — nii eraisikule kui ettevõttele.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#kontakt">Küsi pakkumist</a>
+          <a class="btn ghost" href="#teenus">Vaata võimalusi</a>
         </div>
 
-        <div class="hero-card" aria-hidden="true">
-          <div class="sparkle"></div>
-          <div class="card-inner">
-            <h2 class="card-title">Populaarne: kingikomplekt</h2>
-            <ul class="checklist">
-              <li>Teemakohane kujundus</li>
-              <li>Kaunis pakkimine</li>
-              <li>Lisatav kaart/sõnum</li>
-              <li>Võimalus ettevõtte logoks</li>
-            </ul>
-            <div class="note">
-              <span class="note-dot"></span>
-              <span>Kirjuta, mis eelarve ja kellele kingitus — pakume variandid.</span>
-            </div>
+        <div class="hero-meta" aria-label="Kiirinfo">
+          <div class="meta-item">
+            <span class="meta-title">Fookus</span>
+            <span class="meta-text">kingikomplektid &amp; kinkekarbid</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-title">Stiil</span>
+            <span class="meta-text">pastelne, puhas, “premium”</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-title">Tellimine</span>
+            <span class="meta-text">lihtne: eesmärk + eelarve + kuupäev</span>
           </div>
         </div>
       </div>
-
-      <div class="hero-bg" aria-hidden="true"></div>
     </section>
 
-    <!-- KINKEKARBID / PÕHITEENUS -->
+    <!-- TEENUS -->
     <section id="teenus" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Kinkekarbid ja kingikomplektid</h2>
-          <p>
-            Põhifookus on kinkekomplektidel — valime sisu, paneme kokku, kujundame ja pakime.
-            Sobib nii eraisikule kui ettevõttele.
-          </p>
+          <p>Kolm põhilist suunda — selge, lihtne ja hästi esitletud.</p>
         </div>
 
-        <div class="grid-3">
-          <article class="tile">
-            <h3>Hooajalised kinkekarbid</h3>
-            <p>Jõulud, kevad &amp; munadepühad, Halloween, sõbrapäev — alati temaatiline välimus.</p>
-            <p class="tagline">Kiire “valmis valik” + võimalus kohandada.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Hooajalised teemad</h3>
+            <p>Jõulud, sõbrapäev, kevad &amp; munadepühad, Halloween — temaatiline kujundus ja sisu.</p>
+            <p class="hint">Hea variant, kui tahad “valmis valikut” + väikest kohandust.</p>
           </article>
 
-          <article class="tile">
+          <article class="card">
             <h3>Personaalne kingitus</h3>
-            <p>Sünnipäev, beebipidu, pulmad, tänu-kingitused. Lisame teksti/kaardi ja stiili sinu järgi.</p>
-            <p class="tagline">Soovi korral ka 3D detailid (nt nimed, väikesed kaunistused).</p>
+            <p>Sünnipäevad, beebipeod, tänu-kingid. Lisame kaardi/sõnumi ja stiili sinu järgi.</p>
+            <p class="hint">Soovi korral lisadetailid (nt nimed, väikesed 3D kaunistused).</p>
           </article>
 
-          <article class="tile">
+          <article class="card">
             <h3>Ettevõtete kingid</h3>
-            <p>Meeskonnale või klientidele. Ühtne disain, korduvad tellimused, võimalusel logo/branding.</p>
-            <p class="tagline">Hea lahendus pühadeks ja üritusteks.</p>
+            <p>Klientidele ja tiimile. Ühtne välimus, korduvad tellimused, võimalusel logo/branding.</p>
+            <p class="hint">Ideaalne pühadeks ja üritusteks.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- KUIDAS TELLIDA -->
+    <!-- KUIDAS -->
     <section id="kuidas" class="section soft">
       <div class="container">
         <div class="section-head">
           <h2>Kuidas tellimine käib</h2>
-          <p>Lihtne protsess — sina ütled eesmärgi ja eelarve, meie teeme stiilse komplekti.</p>
+          <p>4 sammu, ilma liigse keerutuseta.</p>
         </div>
 
         <ol class="steps">
-          <li class="step">
-            <span class="step-nr">1</span>
+          <li>
+            <span class="nr">1</span>
             <div>
               <h3>Kirjelda soovi</h3>
-              <p>Kellele, mis sündmus, mis eelarve, mitu komplekti ja mis ajaks vaja.</p>
+              <p>Kellele, mis sündmus, eelarve, kogus ja mis kuupäevaks.</p>
             </div>
           </li>
-
-          <li class="step">
-            <span class="step-nr">2</span>
+          <li>
+            <span class="nr">2</span>
             <div>
               <h3>Saad variandid</h3>
-              <p>Pakume ideed: sisu + kujundus + hind. Vajadusel kohandame.</p>
+              <p>Pakume 1–3 ideed (sisu + välimus + hind). Valid või kohandame.</p>
             </div>
           </li>
-
-          <li class="step">
-            <span class="step-nr">3</span>
+          <li>
+            <span class="nr">3</span>
             <div>
               <h3>Valmistame &amp; pakime</h3>
-              <p>Koostame komplekti, lisame kaardi ja viime viimistluse paika.</p>
+              <p>Koostame komplekti ja viime viimistluse paika.</p>
             </div>
           </li>
-
-          <li class="step">
-            <span class="step-nr">4</span>
+          <li>
+            <span class="nr">4</span>
             <div>
               <h3>Kättesaamine</h3>
-              <p>Kokkuleppel üleandmine/saadetis. (Täpsed variandid lisame hiljem.)</p>
+              <p>Kokkuleppel üleandmine/saadetis. (Lisame täpsed variandid hiljem.)</p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- TULEVIK / LISATEENUSED -->
-    <section id="tulekul" class="section">
+    <!-- TULEVIK -->
+    <section id="tulevik" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Tulevikus lisandub</h2>
-          <p>
-            Sa mainisid, et lisaks kinkekomplektidele tulevad aja jooksul uued suunad.
-            Siin on “tulekul” plokk sinu nimekirja järgi.
-          </p>
+          <p>Hoidsin selle teadlikult lühikese ja “puhas” — detailid saame hiljem eraldi lehele.</p>
         </div>
 
-        <div class="chips">
-          <span class="chip">Hooajalised temaatikad</span>
-          <span class="chip">3D print (kaunistused &amp; tooted)</span>
-          <span class="chip">Jõuluornamendid</span>
-          <span class="chip">Sõbrapäeva tooted</span>
-          <span class="chip">Halloween</span>
-          <span class="chip">Valgustid (3D)</span>
-          <span class="chip">Laatadel müümine</span>
-          <span class="chip">Küünlad (väiksem maht)</span>
-          <span class="chip">Adventkalendrid</span>
-          <span class="chip">Päkapikupakid</span>
-          <span class="chip">T-särgid (3D printer logo)</span>
-          <span class="chip">Kingipakkimisteenus</span>
-          <span class="chip">Graveerimisteenus</span>
-          <span class="chip">Kommi laud üritustele</span>
-          <span class="chip">Catering (tulevik)</span>
-          <span class="chip">Snäkivaagen (tulevik)</span>
-          <span class="chip">Välismaale ost/müük (hiljem)</span>
+        <div class="future-grid">
+          <div class="future">
+            <h3>Hooajaprojektid</h3>
+            <ul>
+              <li>Jõuluornamendid ja kaunistused</li>
+              <li>Adventkalendrid &amp; päkapikupakid</li>
+              <li>Halloween ja kevadised teemad</li>
+            </ul>
+          </div>
+
+          <div class="future">
+            <h3>Lisateenused</h3>
+            <ul>
+              <li>Kingipakkimisteenus</li>
+              <li>Graveerimine</li>
+              <li>Laatadel müük</li>
+            </ul>
+          </div>
+
+          <div class="future">
+            <h3>Tooted (hiljem)</h3>
+            <ul>
+              <li>3D detailid &amp; tooted</li>
+              <li>Küünlad (väiksem maht)</li>
+              <li>Snäkivaagen / catering (tulevik)</li>
+            </ul>
+          </div>
         </div>
 
         <div class="callout">
-          <h3>Soovid, et avalehel oleks “Pood” nupp?</h3>
-          <p>
-            Kui sul tekib tootekataloog (Shopify/Voog/WooCommerce), lisame siia “Pood” nupu
-            ja suuname ostukeskkonda.
-          </p>
+          <h3>Kui tekib e-pood</h3>
+          <p>Lisame siia “Pood” nupu (Shopify/Voog/WooCommerce) ja suuname ostukeskkonda.</p>
         </div>
       </div>
     </section>
@@ -209,29 +194,23 @@
       <div class="container">
         <div class="section-head">
           <h2>Kontakt</h2>
-          <p>Kirjuta ja pane kirja: sündmus, eelarve, kogus ja mis ajaks vaja.</p>
+          <p>Kirjuta ja pane kaasa: sündmus, eelarve, kogus, kuupäev. Vastame variantidega.</p>
         </div>
 
-        <div class="contact-grid">
+        <div class="contact">
           <div class="contact-card">
-            <h3>Kirjuta</h3>
-            <p class="mono">info@lindan.ee</p>
-            <p class="small">Kui email pole veel valmis, pane ajutiselt oma Gmail.</p>
+            <h3>Email</h3>
+            <p class="big mono">info@lindan.ee</p>
+            <p class="small">Kui email pole veel valmis, asenda ajutiselt oma Gmailiga.</p>
           </div>
 
           <div class="contact-card">
-            <h3>Asukoht</h3>
-            <p>Eesti</p>
-            <p class="small">Täpsustame hiljem linna/üleandmise variandid.</p>
-          </div>
-
-          <div class="contact-card">
-            <h3>Tellimuse info</h3>
-            <ul class="mini">
+            <h3>Tellimuse “checklist”</h3>
+            <ul class="small">
               <li>Kellele on kingitus?</li>
               <li>Mis teema/sündmus?</li>
-              <li>Eelarve (€/tk)</li>
-              <li>Kogus ja kuupäev</li>
+              <li>Eelarve (€/tk) ja kogus</li>
+              <li>Mis ajaks vaja?</li>
             </ul>
           </div>
         </div>
@@ -242,18 +221,19 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-left">
-        <img class="footer-logo" src="assets/logo.png" alt="Lindan logo" width="140" height="93" />
+        <img class="footer-logo" src="assets/logo.png" alt="Lindan logo" />
         <p class="small">© <span id="y"></span> Lindan OÜ</p>
       </div>
-      <div class="footer-right small">
+
+      <div class="footer-links small">
         <a href="#teenus">Kinkekarbid</a>
         <a href="#kuidas">Tellimine</a>
-        <a href="#tulekul">Tulevik</a>
+        <a href="#tulevik">Tulevik</a>
         <a href="#kontakt">Kontakt</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
